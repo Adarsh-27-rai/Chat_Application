@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp Home</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            overflow-y: scroll;
+            font-family: Arial, sans-serif;
+            background-image: url("https://img.freepik.com/premium-vector/modern-corporate-gradient-blue-yellow-abstract-background-wallpaper_807302-200.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            opacity: 2;
+        }
+
+        .navbar {
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar button {
+            /* background: white; */
+            color: #4facfe;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 400px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .buttons button {
+            padding: 12px 22px;
+            border-radius: 6px;
+            border: none;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .start {
+            background: white;
+            color: #4facfe;
+        }
+
+        .login {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .features {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: #f5f5f5;
+            color: black;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">ChatSphere</div>
+        <button>Login</button>
+    </div>
+
+    <section class="hero">
+        <h1>Connect Instantly</h1>
+        <p>Fast, secure and real-time chat application built with modern full-stack technologies.</p>
+
+        <div class="buttons">
+            <a href="login.html">
+                <button class="start">Get Started</button>
+            </a>
+            
+            <button class="login">Sign In</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose Our Chat App?</h2>
+
+        <div class="cards">
+            <div class="card">⚡ Real-time Messaging</div>
+            <div class="card">🔒 Secure Login</div>
+            <div class="card">📱 Mobile Friendly</div>
+            <div class="card">☁ Cloud Based</div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 ChatSphere | Built with ❤️
+    </footer>
+
+</body>
+
+</html>
