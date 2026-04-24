@@ -1,5 +1,6 @@
 // ─── API CONFIG ───────────────────────────────────────────────────────────────
-export const BACKEND_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
+const rawBackendUrl = import.meta.env.VITE_API_URL || "http://localhost:8080";
+export const BACKEND_URL = rawBackendUrl.replace(/\/+$/, '');
 export const API_BASE = `${BACKEND_URL}/api`;
 export const WS_URL   = `${BACKEND_URL}/ws/chat`; // SockJS endpoint
 
